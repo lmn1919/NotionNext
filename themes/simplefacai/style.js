@@ -80,12 +80,16 @@ right:20px;
 background: #18191b;
 display: inline-flex;
 height: 130px;
-padding:20px
-
+padding:20px;
+z-index:1000
 }
 .tabs-item{
-width:45px;
-padding:0 10px;
+width:35px;
+padding:0 5px;
+margin-right:15px;
+}
+.tabs-active{
+  border-right:2px solid #e94328
 }
   
 

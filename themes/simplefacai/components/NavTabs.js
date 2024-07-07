@@ -14,6 +14,7 @@ import Link from 'next/link'
 const NavTabs = () => {
   const { locale } = useGlobal()
   const [show, switchShow] = useState(false)
+  let [activeUrl,chnageActiveUrl] = useState('/')
   const tabs=[{
     name:'文章',
     href:'/'
@@ -27,17 +28,23 @@ const NavTabs = () => {
     name:'文章标签',
     href:'/tag'
   },]
-
+  // let activeUrl=
+  const handleChange = (el) => {
+    console.log(el)
+    // activeUrl=el.href
+    chnageActiveUrl(el.href)
+    // this.setState({ activeUrl:el.href })
+    // console.log(activeUrl)
+  }
 
   return  <div id='nav-menu-pc' className='nav-item flex'>
             {tabs.map((sLink, index) => {
             return (
               <div
                 key={index}
-                className='tabs-item'>
+                className={`${activeUrl==sLink.href? 'tabs-active':''} tabs-item`} >
                 <Link href={sLink.href} >
-                  <span>
-                    
+                  <span onClick={() => handleChange(sLink,index)}> 
                     {sLink.name}
                   </span>
                 </Link>
