@@ -40,6 +40,9 @@ const TopBar = dynamic(() => import('./components/TopBar'), { ssr: false })
 const Header = dynamic(() => import('./components/Header'), { ssr: false })
 const NavBar = dynamic(() => import('./components/NavBar'), { ssr: false })
 const SideBar = dynamic(() => import('./components/SideBar'), { ssr: false })
+
+const NavTabs = dynamic(() => import('./components/NavTabs'), { ssr: false })
+
 const JumpToTopButton = dynamic(() => import('./components/JumpToTopButton'), {
   ssr: false
 })
@@ -84,7 +87,7 @@ const LayoutBase = props => {
 
         {/* 导航栏 */}
         {/* <NavBar {...props} /> */}
-
+        <NavTabs {...props}/>
         {/* 主体 */}
         <div
           id='container-wrapper'

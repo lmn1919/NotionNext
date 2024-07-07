@@ -71,6 +71,22 @@ position: relative;
  top:-20px
 }
   
+.nav-item{
+
+color: #fff;
+position:fixed;
+top:80px;
+right:20px;
+background: #18191b;
+display: inline-flex;
+height: 130px;
+padding:20px
+
+}
+.tabs-item{
+width:45px;
+padding:0 10px;
+}
   
 
   `}</style>
