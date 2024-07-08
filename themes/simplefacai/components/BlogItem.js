@@ -17,7 +17,7 @@ export const BlogItem = props => {
   return (
     <div
       key={post.id}
-      className='h-42 my-6 pb-8 dark:border-gray-800'>
+      className='h-42 my-6 pb-6 dark:border-gray-800'>
       {/* 文章标题 */}
 
       <div className='flex relative'>
@@ -50,7 +50,7 @@ export const BlogItem = props => {
           </h2>
 
           {/* 文章信息 */}
-          <header className='mb-5 text-md text-gray-700 dark:text-gray-300 flex-wrap flex leading-6'>
+          <header className='mb-2 text-md text-gray-700 dark:text-gray-300 flex-wrap flex leading-6'>
             <div className='space-x-2'>
               {/* <span>
                 {' '}
@@ -96,7 +96,7 @@ export const BlogItem = props => {
             </div>
           </header>
 
-          <main className='text-gray-700 dark:text-gray-300 leading-normal mb-4'>
+          <main className='text-gray-700 dark:text-gray-300 leading-normal mb-2'>
             {!showPreview && (
               <>
                 {post.summary}

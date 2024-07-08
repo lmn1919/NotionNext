@@ -68,28 +68,40 @@ position: relative;
  background-color: #999;
  width: 50px;
  position: absolute;
- top:-20px
+ top:-15px
 }
   
 .nav-item{
 
-color: #fff;
-position:fixed;
-top:80px;
-right:20px;
-background: #18191b;
-display: inline-flex;
-height: 130px;
-padding:20px;
-z-index:1000
+  color: #fff;
+  position:fixed;
+  top:30px;
+  right:30px;
+  background: #18191b;
+  display: inline-flex;
+  height: 135px;
+  padding:20px;
+  z-index:1000
 }
 .tabs-item{
-width:35px;
-padding:0 5px;
-margin-right:15px;
+  width:35px;
+  padding:0 5px;
+  margin-right:15px;
+  position: relative;
 }
 .tabs-active{
-  border-right:2px solid #e94328
+  border:4px solid #e94328;
+  display:inline-block;
+  height:15px;
+  width:15px;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+}
+
+.content-main{
+ width:1000px;
+ box-shadow: 0px 0px 30px 0px  #f5f5f5;  
 }
   
 

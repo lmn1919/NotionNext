@@ -37,14 +37,20 @@ const NavTabs = () => {
     // console.log(activeUrl)
   }
 
-  return  <div id='nav-menu-pc' className='nav-item flex'>
+  return  <div  className='nav-item flex'>
             {tabs.map((sLink, index) => {
             return (
               <div
                 key={index}
-                className={`${activeUrl==sLink.href? 'tabs-active':''} tabs-item`} >
-                <Link href={sLink.href} >
-                  <span onClick={() => handleChange(sLink,index)}> 
+                className={`tabs-item`} >
+                <Link href={sLink.href}  onClick={() => handleChange(sLink,index)}>
+                  <span> 
+                 
+                     
+                    {activeUrl==sLink.href? (
+                             <span className='tabs-active' ></span>
+                    ):''}
+                 
                     {sLink.name}
                   </span>
                 </Link>
