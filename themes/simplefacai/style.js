@@ -100,7 +100,7 @@ position: relative;
 }
 
 .content-main{
- width:1000px;
+ max-width:1000px;
  box-shadow: 0px 0px 30px 0px  #f5f5f5;  
 }
   
