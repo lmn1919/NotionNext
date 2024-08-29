@@ -128,7 +128,7 @@ const GlobalHead = props => {
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
-
+      <meta name="baidu-site-verification" content="codeva-Guz1uua9lc" />
       <link rel='icon' href={BLOG_FAVICON} />
 
       {COMMENT_WEBMENTION_ENABLE && (
