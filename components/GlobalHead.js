@@ -129,6 +129,7 @@ const GlobalHead = props => {
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
       <meta name="baidu-site-verification" content="codeva-Guz1uua9lc" />
+      <script src="https://hm.baidu.com/hm.js?aa8a7d25544d1e795100ec0f2c676234"></script>
       <link rel='icon' href={BLOG_FAVICON} />
 
       {COMMENT_WEBMENTION_ENABLE && (
